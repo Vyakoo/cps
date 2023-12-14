@@ -9,7 +9,7 @@ on = False
 def main():
     while True:
         if keyboard.is_pressed("c"):
-            IsOn()
+            isOn()
         elif keyboard.is_pressed("o"):
             quit()
         elif on == True:
@@ -17,7 +17,7 @@ def main():
             mouse.double_click()
 
 
-def IsOn():
+def isOn():
     global on 
     if on == False:
         on = True
